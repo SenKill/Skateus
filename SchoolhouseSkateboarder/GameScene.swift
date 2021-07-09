@@ -8,7 +8,13 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+struct PhysicsCategory {
+    static let skater: UInt32 = 0x1 << 0
+    static let brick: UInt32 = 0x1 << 1
+    static let gem: UInt32 = 0x1 << 2
+}
+
+class GameScene: SKScene, SKPhysicsContactDelegate {
     
     // Array, that contains all sections of sidewalk
     var bricks = [SKSpriteNode]()
@@ -34,6 +40,7 @@ class GameScene: SKScene {
         background.position = CGPoint(x: xMid, y: yMid)
         addChild(background)
         
+        skater.setupPhysicsBody()
         resetSkater()
         addChild(skater)
         
@@ -42,6 +49,7 @@ class GameScene: SKScene {
         view.addGestureRecognizer(tapGesture)
         
         physicsWorld.gravity = CGVector(dx: 0.0, dy: -6.0)
+        physicsWorld.contactDelegate = self
     }
     
     func resetSkater() {
@@ -60,6 +68,13 @@ class GameScene: SKScene {
         
         brickSize = brick.size
         bricks.append(brick)
+        
+        let center = brick.centerRect.origin
+        brick.physicsBody = SKPhysicsBody(rectangleOf: brick.size, center: center)
+        brick.physicsBody?.affectedByGravity = false
+        brick.physicsBody?.categoryBitMask = PhysicsCategory.brick
+        brick.physicsBody?.collisionBitMask = 0
+        
         return brick
     }
     
@@ -73,7 +88,7 @@ class GameScene: SKScene {
                 
                 brick.removeFromParent()
                 
-                if let brickIndex = bricks.index(of: brick) {
+                if let brickIndex = bricks.firstIndex(of: brick) {
                     bricks.remove(at: brickIndex)
                 }
             } else {
@@ -137,6 +152,12 @@ class GameScene: SKScene {
         if skater.isOnGround {
             skater.velocity = CGPoint(x: 0.0, y: skater.jumpSpeed)
             skater.isOnGround = false
+        }
+    }
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        if contact.bodyA.categoryBitMask == PhysicsCategory.skater && contact.bodyB.categoryBitMask == PhysicsCategory.brick {
+            skater.isOnGround = true
         }
     }
 }
