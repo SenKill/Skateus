@@ -13,7 +13,7 @@ struct PhysicsCategory {
     static let brick: UInt32 = 0x1 << 1
     static let gem: UInt32 = 0x1 << 2
 }
-
+           
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     enum BrickLevel: CGFloat {
@@ -26,10 +26,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         case running
     }
     
+    enum DefaultKeys {
+        static let bestResult = "highscore"
+    }
+    
     // Array, that contains all sections of sidewalk
     var bricks = [SKSpriteNode]()
     var gems = [SKSpriteNode]()
     let gameOverMusic = SKAudioNode(fileNamed: "lol u died.wav")
+    let music = SKAudioNode(fileNamed: "music.wav")
     
     // Size of sections of sidewalk
     var brickSize = CGSize.zero
@@ -56,7 +61,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         anchorPoint = CGPoint.zero
         
-        let background = SKSpriteNode(imageNamed: "background")
+        let background = SKSpriteNode(imageNamed: "backgroundDoom")
         let xMid = frame.midX
         let yMid = frame.midY
         background.position = CGPoint(x: xMid, y: yMid)
@@ -142,8 +147,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func startGame() {
         gameOverMusic.removeFromParent()
-        
         gameState = .running
+        addChild(music)
         
         resetSkater()
         
@@ -165,6 +170,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func gameOver() {
         gameState = .notRunning
+        run(SKAction.playSoundFileNamed("died.wav", waitForCompletion: false))
+        music.removeFromParent()
         
         if score > highScore {
             highScore = score
@@ -294,7 +301,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let isTippedOver = skater.zRotation > maxRotation || skater.zRotation < -maxRotation
         
         if isOffScreen || isTippedOver {
-            run(SKAction.playSoundFileNamed("died.wav", waitForCompletion: false))
             gameOver()
         }
     }
@@ -337,7 +343,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     @objc func handleTap(tapGesture: UITapGestureRecognizer) {
         if gameState == .running {
             if skater.isOnGround {
-                skater.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 260.0))
+                skater.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 290.0))
                 run(SKAction.playSoundFileNamed("jump.wav", waitForCompletion: false))
             }
         } else {

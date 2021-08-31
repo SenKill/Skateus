@@ -13,6 +13,7 @@
 		F732ECAC269D50F200ED7E4C /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = F732ECA8269D50F100ED7E4C /* jump.wav */; };
 		F732ECAD269D50F200ED7E4C /* lol u died.wav in Resources */ = {isa = PBXBuildFile; fileRef = F732ECA9269D50F200ED7E4C /* lol u died.wav */; };
 		F732ECAF269D6E0C00ED7E4C /* sparks.sks in Resources */ = {isa = PBXBuildFile; fileRef = F732ECAE269D6E0C00ED7E4C /* sparks.sks */; };
+		F79C1A5C26DDED18000BACE1 /* music.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79C1A5B26DDED18000BACE1 /* music.wav */; };
 		F7BC21D526940C2500982E0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC21D426940C2500982E0A /* AppDelegate.swift */; };
 		F7BC21D726940C2500982E0A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7BC21D626940C2500982E0A /* GameScene.sks */; };
 		F7BC21D926940C2500982E0A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7BC21D826940C2500982E0A /* Actions.sks */; };
@@ -31,6 +32,7 @@
 		F732ECA8269D50F100ED7E4C /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
 		F732ECA9269D50F200ED7E4C /* lol u died.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "lol u died.wav"; sourceTree = "<group>"; };
 		F732ECAE269D6E0C00ED7E4C /* sparks.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sparks.sks; sourceTree = "<group>"; };
+		F79C1A5B26DDED18000BACE1 /* music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = music.wav; path = ../../../../../Downloads/music.wav; sourceTree = "<group>"; };
 		F7BC21D126940C2500982E0A /* SchoolhouseSkateboarder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolhouseSkateboarder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BC21D426940C2500982E0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7BC21D626940C2500982E0A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -55,6 +57,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F79C1A5526DDEC3E000BACE1 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F732ECA7269D50F100ED7E4C /* died.wav */,
+				F732ECA6269D50F100ED7E4C /* gem.wav */,
+				F732ECA8269D50F100ED7E4C /* jump.wav */,
+				F732ECA9269D50F200ED7E4C /* lol u died.wav */,
+				F79C1A5B26DDED18000BACE1 /* music.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		F79C1A5826DDEC70000BACE1 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				F7BC21D426940C2500982E0A /* AppDelegate.swift */,
+				F7BC21DA26940C2500982E0A /* GameScene.swift */,
+				F7BC21DC26940C2500982E0A /* GameViewController.swift */,
+				F7BC21EC2694238500982E0A /* Skater.swift */,
+				F70ED950269C2CC700F9847B /* MenuLayer.swift */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		F7BC21C826940C2400982E0A = {
 			isa = PBXGroup;
 			children = (
@@ -74,22 +100,15 @@
 		F7BC21D326940C2500982E0A /* SchoolhouseSkateboarder */ = {
 			isa = PBXGroup;
 			children = (
-				F7BC21D426940C2500982E0A /* AppDelegate.swift */,
+				F79C1A5526DDEC3E000BACE1 /* Sounds */,
+				F79C1A5826DDEC70000BACE1 /* Scripts */,
+				F7BC21E126940C2B00982E0A /* Assets.xcassets */,
 				F7BC21D626940C2500982E0A /* GameScene.sks */,
 				F7BC21D826940C2500982E0A /* Actions.sks */,
-				F7BC21DA26940C2500982E0A /* GameScene.swift */,
-				F7BC21DC26940C2500982E0A /* GameViewController.swift */,
+				F732ECAE269D6E0C00ED7E4C /* sparks.sks */,
 				F7BC21DE26940C2500982E0A /* Main.storyboard */,
-				F7BC21E126940C2B00982E0A /* Assets.xcassets */,
-				F732ECA7269D50F100ED7E4C /* died.wav */,
-				F732ECA6269D50F100ED7E4C /* gem.wav */,
-				F732ECA8269D50F100ED7E4C /* jump.wav */,
-				F732ECA9269D50F200ED7E4C /* lol u died.wav */,
 				F7BC21E326940C2B00982E0A /* LaunchScreen.storyboard */,
 				F7BC21E626940C2B00982E0A /* Info.plist */,
-				F7BC21EC2694238500982E0A /* Skater.swift */,
-				F70ED950269C2CC700F9847B /* MenuLayer.swift */,
-				F732ECAE269D6E0C00ED7E4C /* sparks.sks */,
 			);
 			path = SchoolhouseSkateboarder;
 			sourceTree = "<group>";
@@ -154,6 +173,7 @@
 			files = (
 				F732ECAD269D50F200ED7E4C /* lol u died.wav in Resources */,
 				F732ECAC269D50F200ED7E4C /* jump.wav in Resources */,
+				F79C1A5C26DDED18000BACE1 /* music.wav in Resources */,
 				F732ECAA269D50F200ED7E4C /* gem.wav in Resources */,
 				F7BC21E026940C2500982E0A /* Main.storyboard in Resources */,
 				F7BC21D726940C2500982E0A /* GameScene.sks in Resources */,
