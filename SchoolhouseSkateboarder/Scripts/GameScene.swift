@@ -49,7 +49,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var lastUpdateTime: TimeInterval?
     
     var score: Int = 0
-    var highScore: Int = 0
     var lastScoreUpdateTime: TimeInterval = 0.0
     
     let skater = Skater(imageNamed: "skater")
@@ -86,6 +85,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(menuLayer)
     }
     
+    func setHighscore(yourResult result: Int) {
+        let defaults = UserDefaults.standard
+        defaults.set(result, forKey: "highscore")
+    }
+    
+    func getHighscore() -> Int {
+        let defaults = UserDefaults.standard
+        return defaults.integer(forKey: "highscore")
+    }
+    
     func resetSkater() {
         let skaterX = frame.midX / 2.0
         let skaterY = skater.frame.height / 2.0 + 64.0
@@ -99,6 +108,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func setupLabels() {
+        
         let scoreTextLabel: SKLabelNode = SKLabelNode(fontNamed: "Chalkduster")
         scoreTextLabel.text = "Score"
         scoreTextLabel.fontSize = 20.0
@@ -123,7 +133,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         highScoreTextLabel.zPosition = 20
         addChild(highScoreTextLabel)
         
-        let highScoreLabel = SKLabelNode(text: "0")
+        let highScoreLabel = SKLabelNode(text: String(getHighscore()))
         highScoreLabel.position = CGPoint(x: frame.size.width - 40.0, y: frame.size.height - 40.0)
         highScoreLabel.horizontalAlignmentMode = .right
         highScoreLabel.fontName = "Chalkduster"
@@ -139,9 +149,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    func updateHighScoreLabelText() {
+    func updateHighScoreLabelText(withHighScore highScore: Int) {
         if let highScoreLabel = childNode(withName: "highScoreLabel") as? SKLabelNode {
-            highScoreLabel.text = String(format: "%04d", score)
+            highScoreLabel.text = String(format: "%04d", highScore)
         }
     }
     
@@ -172,14 +182,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         gameState = .notRunning
         run(SKAction.playSoundFileNamed("died.wav", waitForCompletion: false))
         music.removeFromParent()
+        let currentHighScore = getHighscore()
         
-        if score > highScore {
-            highScore = score
-            updateHighScoreLabelText()
+        if score > currentHighScore {
+            setHighscore(yourResult: score)
+            updateHighScoreLabelText(withHighScore: score)
         }
-        
         let menuBackgroundColor = UIColor.black.withAlphaComponent(0.4)
         let menuLayer = MenuLayer(color: menuBackgroundColor, size: frame.size)
+        
         menuLayer.anchorPoint = CGPoint.zero
         menuLayer.position = CGPoint.zero
         menuLayer.zPosition = 30
@@ -300,7 +311,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let maxRotation = CGFloat(GLKMathDegreesToRadians(85.0))
         let isTippedOver = skater.zRotation > maxRotation || skater.zRotation < -maxRotation
         
-        if isOffScreen || isTippedOver {
+        if isOffScreen || isTippedOver && skater.isOnGround {
             gameOver()
         }
     }

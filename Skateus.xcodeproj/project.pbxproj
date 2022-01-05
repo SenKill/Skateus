@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F70ED951269C2CC700F9847B /* MenuLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70ED950269C2CC700F9847B /* MenuLayer.swift */; };
 		F732ECAA269D50F200ED7E4C /* gem.wav in Resources */ = {isa = PBXBuildFile; fileRef = F732ECA6269D50F100ED7E4C /* gem.wav */; };
 		F732ECAB269D50F200ED7E4C /* died.wav in Resources */ = {isa = PBXBuildFile; fileRef = F732ECA7269D50F100ED7E4C /* died.wav */; };
 		F732ECAC269D50F200ED7E4C /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = F732ECA8269D50F100ED7E4C /* jump.wav */; };
 		F732ECAD269D50F200ED7E4C /* lol u died.wav in Resources */ = {isa = PBXBuildFile; fileRef = F732ECA9269D50F200ED7E4C /* lol u died.wav */; };
 		F732ECAF269D6E0C00ED7E4C /* sparks.sks in Resources */ = {isa = PBXBuildFile; fileRef = F732ECAE269D6E0C00ED7E4C /* sparks.sks */; };
+		F74C184C2785B5E300B99E9A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C18472785B5E200B99E9A /* GameScene.swift */; };
+		F74C184D2785B5E300B99E9A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C18482785B5E200B99E9A /* GameViewController.swift */; };
+		F74C184E2785B5E300B99E9A /* Skater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C18492785B5E300B99E9A /* Skater.swift */; };
+		F74C184F2785B5E300B99E9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C184A2785B5E300B99E9A /* AppDelegate.swift */; };
+		F74C18502785B5E300B99E9A /* MenuLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C184B2785B5E300B99E9A /* MenuLayer.swift */; };
 		F79C1A5C26DDED18000BACE1 /* music.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79C1A5B26DDED18000BACE1 /* music.wav */; };
-		F7BC21D526940C2500982E0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC21D426940C2500982E0A /* AppDelegate.swift */; };
 		F7BC21D726940C2500982E0A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7BC21D626940C2500982E0A /* GameScene.sks */; };
 		F7BC21D926940C2500982E0A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7BC21D826940C2500982E0A /* Actions.sks */; };
-		F7BC21DB26940C2500982E0A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC21DA26940C2500982E0A /* GameScene.swift */; };
-		F7BC21DD26940C2500982E0A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC21DC26940C2500982E0A /* GameViewController.swift */; };
 		F7BC21E026940C2500982E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BC21DE26940C2500982E0A /* Main.storyboard */; };
 		F7BC21E226940C2B00982E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BC21E126940C2B00982E0A /* Assets.xcassets */; };
 		F7BC21E526940C2B00982E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BC21E326940C2B00982E0A /* LaunchScreen.storyboard */; };
-		F7BC21ED2694238500982E0A /* Skater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BC21EC2694238500982E0A /* Skater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F70ED950269C2CC700F9847B /* MenuLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLayer.swift; sourceTree = "<group>"; };
 		F732ECA6269D50F100ED7E4C /* gem.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gem.wav; sourceTree = "<group>"; };
 		F732ECA7269D50F100ED7E4C /* died.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = died.wav; sourceTree = "<group>"; };
 		F732ECA8269D50F100ED7E4C /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
 		F732ECA9269D50F200ED7E4C /* lol u died.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "lol u died.wav"; sourceTree = "<group>"; };
 		F732ECAE269D6E0C00ED7E4C /* sparks.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sparks.sks; sourceTree = "<group>"; };
+		F74C18472785B5E200B99E9A /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F74C18482785B5E200B99E9A /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F74C18492785B5E300B99E9A /* Skater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skater.swift; sourceTree = "<group>"; };
+		F74C184A2785B5E300B99E9A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F74C184B2785B5E300B99E9A /* MenuLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLayer.swift; sourceTree = "<group>"; };
 		F79C1A5B26DDED18000BACE1 /* music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = music.wav; path = ../../../../../Downloads/music.wav; sourceTree = "<group>"; };
-		F7BC21D126940C2500982E0A /* SchoolhouseSkateboarder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolhouseSkateboarder.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7BC21D426940C2500982E0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7BC21D126940C2500982E0A /* Skateus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skateus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BC21D626940C2500982E0A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		F7BC21D826940C2500982E0A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		F7BC21DA26940C2500982E0A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		F7BC21DC26940C2500982E0A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F7BC21DF26940C2500982E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7BC21E126940C2B00982E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7BC21E426940C2B00982E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7BC21E626940C2B00982E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7BC21EC2694238500982E0A /* Skater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +72,11 @@
 		F79C1A5826DDEC70000BACE1 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				F7BC21D426940C2500982E0A /* AppDelegate.swift */,
-				F7BC21DA26940C2500982E0A /* GameScene.swift */,
-				F7BC21DC26940C2500982E0A /* GameViewController.swift */,
-				F7BC21EC2694238500982E0A /* Skater.swift */,
-				F70ED950269C2CC700F9847B /* MenuLayer.swift */,
+				F74C184A2785B5E300B99E9A /* AppDelegate.swift */,
+				F74C18472785B5E200B99E9A /* GameScene.swift */,
+				F74C18482785B5E200B99E9A /* GameViewController.swift */,
+				F74C184B2785B5E300B99E9A /* MenuLayer.swift */,
+				F74C18492785B5E300B99E9A /* Skater.swift */,
 			);
 			path = Scripts;
 			sourceTree = "<group>";
@@ -92,7 +92,7 @@
 		F7BC21D226940C2500982E0A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7BC21D126940C2500982E0A /* SchoolhouseSkateboarder.app */,
+				F7BC21D126940C2500982E0A /* Skateus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,9 +116,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F7BC21D026940C2400982E0A /* SchoolhouseSkateboarder */ = {
+		F7BC21D026940C2400982E0A /* Skateus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7BC21E926940C2B00982E0A /* Build configuration list for PBXNativeTarget "SchoolhouseSkateboarder" */;
+			buildConfigurationList = F7BC21E926940C2B00982E0A /* Build configuration list for PBXNativeTarget "Skateus" */;
 			buildPhases = (
 				F7BC21CD26940C2400982E0A /* Sources */,
 				F7BC21CE26940C2400982E0A /* Frameworks */,
@@ -128,9 +128,9 @@
 			);
 			dependencies = (
 			);
-			name = SchoolhouseSkateboarder;
+			name = Skateus;
 			productName = SchoolhouseSkateboarder;
-			productReference = F7BC21D126940C2500982E0A /* SchoolhouseSkateboarder.app */;
+			productReference = F7BC21D126940C2500982E0A /* Skateus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -145,10 +145,11 @@
 				TargetAttributes = {
 					F7BC21D026940C2400982E0A = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
-			buildConfigurationList = F7BC21CC26940C2400982E0A /* Build configuration list for PBXProject "SchoolhouseSkateboarder" */;
+			buildConfigurationList = F7BC21CC26940C2400982E0A /* Build configuration list for PBXProject "Skateus" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -161,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7BC21D026940C2400982E0A /* SchoolhouseSkateboarder */,
+				F7BC21D026940C2400982E0A /* Skateus */,
 			);
 		};
 /* End PBXProject section */
@@ -192,11 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7BC21DB26940C2500982E0A /* GameScene.swift in Sources */,
-				F7BC21ED2694238500982E0A /* Skater.swift in Sources */,
-				F70ED951269C2CC700F9847B /* MenuLayer.swift in Sources */,
-				F7BC21DD26940C2500982E0A /* GameViewController.swift in Sources */,
-				F7BC21D526940C2500982E0A /* AppDelegate.swift in Sources */,
+				F74C184F2785B5E300B99E9A /* AppDelegate.swift in Sources */,
+				F74C184D2785B5E300B99E9A /* GameViewController.swift in Sources */,
+				F74C18502785B5E300B99E9A /* MenuLayer.swift in Sources */,
+				F74C184C2785B5E300B99E9A /* GameScene.swift in Sources */,
+				F74C184E2785B5E300B99E9A /* Skater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZKRYANSM8S;
 				INFOPLIST_FILE = SchoolhouseSkateboarder/Info.plist;
@@ -351,6 +353,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = senkill.SchoolhouseSkateboarder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -360,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZKRYANSM8S;
 				INFOPLIST_FILE = SchoolhouseSkateboarder/Info.plist;
@@ -377,7 +381,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F7BC21CC26940C2400982E0A /* Build configuration list for PBXProject "SchoolhouseSkateboarder" */ = {
+		F7BC21CC26940C2400982E0A /* Build configuration list for PBXProject "Skateus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7BC21E726940C2B00982E0A /* Debug */,
@@ -386,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7BC21E926940C2B00982E0A /* Build configuration list for PBXNativeTarget "SchoolhouseSkateboarder" */ = {
+		F7BC21E926940C2B00982E0A /* Build configuration list for PBXNativeTarget "Skateus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7BC21EA26940C2B00982E0A /* Debug */,

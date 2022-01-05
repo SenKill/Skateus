@@ -9,6 +9,7 @@
 import SpriteKit
 
 class MenuLayer: SKSpriteNode {
+    
     func display(message: String, score: Int?) {
         let messageLabel = SKLabelNode(text: message)
         
@@ -21,7 +22,7 @@ class MenuLayer: SKSpriteNode {
         messageLabel.fontSize = 48.0
         messageLabel.zPosition = 20
         addChild(messageLabel)
-        
+
         let finalX = frame.width / 2.0
         let messageAction = SKAction.moveTo(x: finalX, duration: 0.3)
         messageLabel.run(messageAction)
