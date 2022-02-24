@@ -17,7 +17,7 @@
 		F74C184E2785B5E300B99E9A /* Skater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C18492785B5E300B99E9A /* Skater.swift */; };
 		F74C184F2785B5E300B99E9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C184A2785B5E300B99E9A /* AppDelegate.swift */; };
 		F74C18502785B5E300B99E9A /* MenuLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C184B2785B5E300B99E9A /* MenuLayer.swift */; };
-		F79C1A5C26DDED18000BACE1 /* music.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79C1A5B26DDED18000BACE1 /* music.wav */; };
+		F791B26A27C77D1300F00275 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F791B26927C77D1300F00275 /* music.mp3 */; };
 		F7BC21D726940C2500982E0A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7BC21D626940C2500982E0A /* GameScene.sks */; };
 		F7BC21D926940C2500982E0A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7BC21D826940C2500982E0A /* Actions.sks */; };
 		F7BC21E026940C2500982E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BC21DE26940C2500982E0A /* Main.storyboard */; };
@@ -36,7 +36,7 @@
 		F74C18492785B5E300B99E9A /* Skater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skater.swift; sourceTree = "<group>"; };
 		F74C184A2785B5E300B99E9A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F74C184B2785B5E300B99E9A /* MenuLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLayer.swift; sourceTree = "<group>"; };
-		F79C1A5B26DDED18000BACE1 /* music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = music.wav; path = ../../../../../Downloads/music.wav; sourceTree = "<group>"; };
+		F791B26927C77D1300F00275 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		F7BC21D126940C2500982E0A /* Skateus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skateus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BC21D626940C2500982E0A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		F7BC21D826940C2500982E0A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 				F732ECA6269D50F100ED7E4C /* gem.wav */,
 				F732ECA8269D50F100ED7E4C /* jump.wav */,
 				F732ECA9269D50F200ED7E4C /* lol u died.wav */,
-				F79C1A5B26DDED18000BACE1 /* music.wav */,
+				F791B26927C77D1300F00275 /* music.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = SenKill;
 				TargetAttributes = {
 					F7BC21D026940C2400982E0A = {
@@ -174,12 +174,12 @@
 			files = (
 				F732ECAD269D50F200ED7E4C /* lol u died.wav in Resources */,
 				F732ECAC269D50F200ED7E4C /* jump.wav in Resources */,
-				F79C1A5C26DDED18000BACE1 /* music.wav in Resources */,
 				F732ECAA269D50F200ED7E4C /* gem.wav in Resources */,
 				F7BC21E026940C2500982E0A /* Main.storyboard in Resources */,
 				F7BC21D726940C2500982E0A /* GameScene.sks in Resources */,
 				F732ECAF269D6E0C00ED7E4C /* sparks.sks in Resources */,
 				F7BC21E226940C2B00982E0A /* Assets.xcassets in Resources */,
+				F791B26A27C77D1300F00275 /* music.mp3 in Resources */,
 				F7BC21E526940C2B00982E0A /* LaunchScreen.storyboard in Resources */,
 				F732ECAB269D50F200ED7E4C /* died.wav in Resources */,
 				F7BC21D926940C2500982E0A /* Actions.sks in Resources */,
@@ -249,6 +249,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -274,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -310,6 +311,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -329,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

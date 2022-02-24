@@ -34,7 +34,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var bricks = [SKSpriteNode]()
     var gems = [SKSpriteNode]()
     let gameOverMusic = SKAudioNode(fileNamed: "lol u died.wav")
-    let music = SKAudioNode(fileNamed: "music.wav")
+    let music = SKAudioNode(fileNamed: "music.mp3")
     
     // Size of sections of sidewalk
     var brickSize = CGSize.zero
